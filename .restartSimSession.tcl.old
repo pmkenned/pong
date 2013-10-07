@@ -1,0 +1,210 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Sat Apr 27 16:20:06 2013
+# Designs open: 1
+#   Sim: /afs/ece.cmu.edu/usr/pmkenned/sv/pong/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: pong_tb
+#   Wave.1: 63 signals
+#   Group count = 1
+#   Group p signal count = 63
+# End_DVE_Session_Save_Info
+
+# DVE version: F-2011.12-SP1
+# DVE build date: May 27 2012 20:57:07
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE Topleve session: 
+
+
+# Create and position top-level windows :TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
+
+
+# Create and position top-level windows :TopLevel.2
+
+set TopLevel.2 TopLevel.2
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.2} -option true
+
+# MDI window settings
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 556} {child_wave_right 1358} {child_wave_colname 275} {child_wave_colvalue 277} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+dump -add { pong_tb } -depth 0 -scope "."
+dump -add { pong_tb } -depth 0 -scope "."
+dump -add { pong_tb } -depth 0 -scope "."
+dump -add { pong_tb } -depth 0 -scope "."
+dump -add { pong_tb } -depth 0 -scope "."
+dump -add { pong_tb } -depth 0 -scope "."
+
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {pong_tb.p}
+
+set p p
+gui_sg_create ${p}
+gui_sg_addsignal -group ${p} { pong_tb.p.cycle_count_n pong_tb.p.cycle_count pong_tb.p.ledg pong_tb.p.do_update pong_tb.p.ball_pos_y_n pong_tb.p.ball_pos_x_n pong_tb.p.in_lpad pong_tb.p.rst pong_tb.p.ball_off_wall pong_tb.p.in_lpad_hor pong_tb.p.ledr pong_tb.p.ball_off_left pong_tb.p.rpad_max pong_tb.p.in_rpad pong_tb.p.in_lpad_ver pong_tb.p.ball_hit_pad pong_tb.p.ball_off_bottom pong_tb.p.clk pong_tb.p.ball_off_sides pong_tb.p.rpad_score pong_tb.p.VS pong_tb.p.VGA_RGB pong_tb.p.in_ball_hor pong_tb.p.rpad_pos_n pong_tb.p.clk_25M pong_tb.p.rpad_pos pong_tb.p.btns_b pong_tb.p.lpad_score pong_tb.p.in_ball_ver pong_tb.p.rpad_min pong_tb.p.VGA_clk pong_tb.p.lpad_pos_n pong_tb.p.clk_50M pong_tb.p.lpad_up_btn pong_tb.p.VGA_blank pong_tb.p.ball_off_right pong_tb.p.in_ball pong_tb.p.in_rpad_hor pong_tb.p.ball_hit_lpad pong_tb.p.ball_dir_y_n pong_tb.p.ball_dir_x_n pong_tb.p.lpad_dn_btn pong_tb.p.ball_off_top pong_tb.p.vga_row pong_tb.p.in_rpad_ver pong_tb.p.lpad_max pong_tb.p.lpad_score_n pong_tb.p.ball_hit_rpad pong_tb.p.sw pong_tb.p.rpad_up_btn pong_tb.p.ball_dir_x pong_tb.p.ball_dir_y pong_tb.p.btns pong_tb.p.lpad_pos pong_tb.p.display_done pong_tb.p.lpad_min pong_tb.p.ball_pos_x pong_tb.p.vga_col pong_tb.p.ball_pos_y pong_tb.p.rpad_dn_btn pong_tb.p.game_period pong_tb.p.rpad_score_n pong_tb.p.HS }
+gui_set_radix -radix {decimal} -signals {Sim:pong_tb.p.ball_pos_y_n}
+gui_set_radix -radix {unsigned} -signals {Sim:pong_tb.p.ball_pos_y_n}
+gui_set_radix -radix {decimal} -signals {Sim:pong_tb.p.ball_pos_x_n}
+gui_set_radix -radix {unsigned} -signals {Sim:pong_tb.p.ball_pos_x_n}
+gui_sg_set_analog_property -group ${p} -color #ff00ff -pos -1 -origGroup {} Sim:pong_tb.p.ball_pos_x
+gui_set_radix -radix {decimal} -signals {Sim:pong_tb.p.ball_pos_x}
+gui_set_radix -radix {unsigned} -signals {Sim:pong_tb.p.ball_pos_x}
+gui_set_display_scheme -scheme analog -signal {Sim:pong_tb.p.ball_pos_x}
+gui_sg_set_analog_property -group ${p} -color #00ffff -pos -1 -origGroup {} Sim:pong_tb.p.ball_pos_y
+gui_set_radix -radix {decimal} -signals {Sim:pong_tb.p.ball_pos_y}
+gui_set_radix -radix {unsigned} -signals {Sim:pong_tb.p.ball_pos_y}
+gui_set_display_scheme -scheme analog -signal {Sim:pong_tb.p.ball_pos_y}
+
+# Global: Highlighting
+
+# Post database loading setting...
+
+# Restore C1 time
+gui_set_time -C1_only 7992
+
+
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {UnnamedProcess 1} {Function 1} {Block 1} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {PowSwitch 0} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {IsoCell 0} {ClassDef 1} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_select -id ${Hier.1} {pong_tb}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {pong_tb}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active pong_tb /afs/ece.cmu.edu/usr/pmkenned/sv/pong/pong_tb.sv
+gui_view_scroll -id ${Source.1} -vertical -set 0
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 7636 8349
+gui_list_add_group -id ${Wave.1} -after {New Group} {p}
+gui_list_select -id ${Wave.1} {pong_tb.p.ball_off_sides }
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+gui_set_display_scheme -id ${Wave.1} -scheme analog -signal {Sim:pong_tb.p.ball_pos_x}
+gui_set_analog_wave_options -id ${Wave.1} -name Sim:pong_tb.p.ball_pos_x -mark_samples 0 -mark_sample_shape Cross -mark_sample_size 3 -yrange full -ymin 0 -ymax 1023 -yscale lin -yaxis_left 1 -yaxis_right 0
+gui_list_set_height -id ${Wave.1} -height 75  -name Sim:pong_tb.p.ball_pos_x -occurrence 1 -group p 
+gui_set_display_scheme -id ${Wave.1} -scheme analog -signal {Sim:pong_tb.p.ball_pos_y}
+gui_set_analog_wave_options -id ${Wave.1} -name Sim:pong_tb.p.ball_pos_y -mark_samples 0 -mark_sample_shape Cross -mark_sample_size 3 -yrange full -ymin 0 -ymax 1023 -yscale lin -yaxis_left 1 -yaxis_right 0
+gui_list_set_height -id ${Wave.1} -height 75  -name Sim:pong_tb.p.ball_pos_y -occurrence 1 -group p 
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*score*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group p  -position in
+
+gui_marker_move -id ${Wave.1} {C1} 7992
+gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${Console.1}
+}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+
